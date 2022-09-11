@@ -1,120 +1,153 @@
 <mxfile host="65bd71144e">
     <diagram id="JLhfebQivABqeBeYJ3sW" name="페이지-1">
-        <mxGraphModel dx="1469" dy="350" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2514" dy="886" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="4" value="종가_순환신경망" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="140" y="315" width="340" height="150" as="geometry"/>
+                <mxCell id="56" value="&lt;font style=&quot;font-size: 30px&quot;&gt;장 중&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+                    <mxGeometry x="-240" y="640" width="680" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="intput 단위: 5일" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="4">
-                    <mxGeometry y="30" width="340" height="30" as="geometry"/>
+                <mxCell id="50" value="&lt;font style=&quot;font-size: 30px&quot;&gt;장 열린 날 저녁&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+                    <mxGeometry x="-800" y="80" width="1760" height="440" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="학습 데이터 크기: 300일" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="4">
-                    <mxGeometry y="60" width="340" height="30" as="geometry"/>
+                <mxCell id="42" value="&lt;font style=&quot;font-size: 20px&quot;&gt;데이터 학습 및 다음달 변동률 예측&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+                    <mxGeometry x="-400" y="120" width="480" height="360" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="input: 상대 가격(고가,저가,시가,종가, 고점저점기울기), 상대 거래량" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="4">
-                    <mxGeometry y="90" width="340" height="30" as="geometry"/>
+                <mxCell id="4" value="종가 순환 신경망" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="-360" y="320" width="400" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="output: 다음날 종가 상승률" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="4">
-                    <mxGeometry y="120" width="340" height="30" as="geometry"/>
+                <mxCell id="5" value="intput 길이: 5일" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="4" vertex="1">
+                    <mxGeometry y="30" width="400" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="강화학습" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="190" y="540" width="350" height="150" as="geometry"/>
+                <mxCell id="6" value="총 학습 데이터 크기: 300일" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="4" vertex="1">
+                    <mxGeometry y="60" width="400" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="input: 순환 신경망, per, pbr, 코스피 기울기, 현재 상태, ...." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="10">
+                <mxCell id="9" value="input: 상대 가격(고가,저가,시가,종가), 고점저점기울기, 상대 거래량" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="4" vertex="1">
+                    <mxGeometry y="90" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="output: 다음날 종가 상승률" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="4" vertex="1">
+                    <mxGeometry y="120" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="강화학습" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="680" width="350" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="input: 분단위 순환 신경망 예측값, per, pbr, 코스피 기울기,...." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="10" vertex="1">
                     <mxGeometry y="30" width="350" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="action: 비율매수, 매도, 스테이" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="10">
+                <mxCell id="12" value="action: 종목별 비율매수, 해당 종목 매도, 스테이" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="10" vertex="1">
                     <mxGeometry y="60" width="350" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="강화: 돈 증가 비율" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="10">
+                <mxCell id="13" value="강화: 돈 증가 비율" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="10" vertex="1">
                     <mxGeometry y="90" width="350" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="손실 &gt; 10% 시 매도" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="10">
+                <mxCell id="14" value="손실 &gt; 10% 시 매도, 장마감 시 매도" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="10" vertex="1">
                     <mxGeometry y="120" width="350" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="둘다 5%이상, 상위 5개" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="560" y="270" width="120" height="60" as="geometry"/>
+                <mxCell id="16" value="분단위 순환 신경망" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="240" width="400" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="순환신경망" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="-220" y="540" width="340" height="150" as="geometry"/>
+                <mxCell id="17" value="intput 길이: 5분" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="16" vertex="1">
+                    <mxGeometry y="30" width="400" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="intput 단위: 5분" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="16">
-                    <mxGeometry y="30" width="340" height="30" as="geometry"/>
+                <mxCell id="18" value="학습 데이터 크기: 당일 1분틱" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="16" vertex="1">
+                    <mxGeometry y="60" width="400" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="학습 데이터 크기: 1분 틱 전날 하루" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="16">
-                    <mxGeometry y="60" width="340" height="30" as="geometry"/>
+                <mxCell id="19" value="input: 상대 가격(고가,저가,시가,종가), 고점저점기울기, 상대 거래량" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="16" vertex="1">
+                    <mxGeometry y="90" width="400" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="input: 상대 가격(고가,저가,시가,종가, 고점저점기울기), 상대 거래량" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="16">
-                    <mxGeometry y="90" width="340" height="30" as="geometry"/>
+                <mxCell id="20" value="output: 다음 분틱 종가 상승률" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="16" vertex="1">
+                    <mxGeometry y="120" width="400" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="output: 다음 분틱 종가" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="16">
-                    <mxGeometry y="120" width="340" height="30" as="geometry"/>
+                <mxCell id="22" value="고가 순환 신경망" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="-360" y="130" width="400" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="18" target="12">
+                <mxCell id="23" value="intput 길이: 5일" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="22" vertex="1">
+                    <mxGeometry y="30" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="총 학습 데이터 크기: 300일" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="22" vertex="1">
+                    <mxGeometry y="60" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="input: 상대 가격(고가,저가,시가,종가), 고점저점기울기, 상대 거래량" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="22" vertex="1">
+                    <mxGeometry y="90" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="output: 다음날 고가 상승률" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="22" vertex="1">
+                    <mxGeometry y="120" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="40" target="24" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="130" y="590" as="sourcePoint"/>
-                        <mxPoint x="180" y="540" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="22" value="고가_순환신경망" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="140" y="80" width="340" height="150" as="geometry"/>
-                </mxCell>
-                <mxCell id="23" value="intput 단위: 5일" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="22">
-                    <mxGeometry y="30" width="340" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="24" value="학습 데이터 크기: 300일" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="22">
-                    <mxGeometry y="60" width="340" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="25" value="input: 상대 가격(고가,저가,시가,종가, 고점저점기울기), 상대 거래량" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="22">
-                    <mxGeometry y="90" width="340" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="29" value="output: 다음날 고가 상승률" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="22">
-                    <mxGeometry y="120" width="340" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="27" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="24" target="15">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="520" y="160" as="sourcePoint"/>
-                        <mxPoint x="630" y="170" as="targetPoint"/>
+                        <mxPoint x="-10" y="330" as="sourcePoint"/>
+                        <mxPoint x="160" y="300" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="520" y="155"/>
-                            <mxPoint x="520" y="300"/>
+                            <mxPoint x="-440" y="315"/>
+                            <mxPoint x="-440" y="205"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="28" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="15">
+                <mxCell id="34" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="40" target="6" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="610" y="410" as="sourcePoint"/>
-                        <mxPoint x="660" y="360" as="targetPoint"/>
+                        <mxPoint x="-10" y="330" as="sourcePoint"/>
+                        <mxPoint x="30" y="400" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="520" y="390"/>
-                            <mxPoint x="520" y="300"/>
+                            <mxPoint x="-440" y="315"/>
+                            <mxPoint x="-440" y="395"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="32" value="300일 저점 1000원이상, 데이터 300개 이상, 최소 거래대금 10억이상" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="-90" y="260" width="120" height="60" as="geometry"/>
+                <mxCell id="38" value="학습 데이터 선정" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="-760" y="240" width="280" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="32" target="24">
+                <mxCell id="39" value="- 데이터 최소 300개" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=15;" vertex="1" parent="38">
+                    <mxGeometry y="30" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="- 모든 기간 내 저점 1000원 이상" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=15;" vertex="1" parent="38">
+                    <mxGeometry y="60" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="- 최소 거래 대금 10억 이상(종가*거래량)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=15;" vertex="1" parent="38">
+                    <mxGeometry y="90" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="다음날 거래할 종목 선정" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="240" width="280" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="- 고가 상승률 5% 이상" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=15;" vertex="1" parent="44">
+                    <mxGeometry y="30" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="- 종가 상승률 5% 이상" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=15;" vertex="1" parent="44">
+                    <mxGeometry y="60" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="- 위 2조건 곱을 만족하는 상위 3개 종목" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=15;" vertex="1" parent="44">
+                    <mxGeometry y="90" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="endArrow=classic;html=1;fontSize=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="24" target="46">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="150" y="310" as="sourcePoint"/>
-                        <mxPoint x="200" y="260" as="targetPoint"/>
+                        <mxPoint x="160" y="490" as="sourcePoint"/>
+                        <mxPoint x="130" y="260" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="80" y="290"/>
-                            <mxPoint x="80" y="155"/>
+                            <mxPoint x="120" y="205"/>
+                            <mxPoint x="120" y="315"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="34" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="32" target="6">
+                <mxCell id="49" value="" style="endArrow=classic;html=1;fontSize=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="46">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="30" y="290" as="sourcePoint"/>
-                        <mxPoint x="70" y="360" as="targetPoint"/>
+                        <mxPoint x="180" y="480" as="sourcePoint"/>
+                        <mxPoint x="230" y="430" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="80" y="290"/>
-                            <mxPoint x="80" y="390"/>
+                            <mxPoint x="120" y="395"/>
+                            <mxPoint x="120" y="315"/>
                         </Array>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="52" value="" style="endArrow=classic;html=1;fontSize=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="46" target="18">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="520" y="530" as="sourcePoint"/>
+                        <mxPoint x="570" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="분단위 순환 신경망 학습" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="-200" y="680" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="분단위 순환 신경망 예측" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="-200" y="720" width="160" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
